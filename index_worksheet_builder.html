@@ -1175,7 +1175,8 @@
 
 
   function parseChoicesFromExtracted(text) {
-    const src = String(text || "").replace(//g, "");
+    const src = String(text || "").replace(/
+/g, "");
     const re = /\((\d)\)\s*([^
 ]+(?:
 (?!\(\d\)|\d+\s)[^
